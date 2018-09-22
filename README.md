@@ -1,4 +1,8 @@
-# Video Poker
+<h1 align="center">
+  <br>
+  <a href="http://videopoker.zachloza.com/"><img src="https://raw.githubusercontent.com/Zach10za/VideoPoker/master/src/assets/videopoker.png" alt="videopoker" width="200"></a>
+  <br>
+</h1>
 
 Video poker 48 hour coding challenge
 
