@@ -2,14 +2,19 @@
   <br>
   <a href="http://videopoker.zachloza.com/"><img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/videopoker.png" alt="videopoker" width="500"/></a>
   <br>
-  <br>
-  <br>
 </h1>
-<p align="center>
-![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <a href="#/">
+    <img src="https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg">
+  </a>
+  <a href="#/">
+    <img src="https://img.shields.io/badge/contributions-welcome-orange.svg">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg">
+  </a>
 </p>
+
 Video poker coding test
 
 ## Getting Started
