@@ -4,7 +4,7 @@ Video poker 48 hour coding challenge
 
 ## Getting Started
 
-These instructions will help get ayou a copy of the project running on your local machine.
+These instructions will help get a you a copy of the project running on your local machine.
 
 ### Prerequisites
 
