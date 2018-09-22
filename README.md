@@ -16,13 +16,15 @@
   </a>
 </p>
 
-<img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/screenshot.png">
+  <br>
+<img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/screenshot.PNG">
 
+  <br>
 ## How to play
 
 The goal of the game is simple: score as many points as possible. To score points you must create poker hands. To start, press `Deal` to draw 5 cards from a new deck. Once you have 5 cards, you may choose to discard 0 to 5 of them. To discard just select all the cards you do not want and then hit `Go`.
 
-<img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/screenshot2.png">
+<img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/screenshot2.PNG">
 
 You will then draw cards until you're back to 5. Based on a set few poker hands, you will recieved betwen 100 and 1000 points.
 
