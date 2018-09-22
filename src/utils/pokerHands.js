@@ -1,5 +1,4 @@
 
-
 /**
  * Checks if all cards are the same suit
  * 

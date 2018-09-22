@@ -1,36 +1,34 @@
-
 const initialState = {
-  toDiscard: []
+  queue: []
 };
 
 export default function( state = initialState, action ) {
   switch (action.type) {
-    case "SET_TO_DISCARD": {
-      const { toDiscard } = action.payload;
+    case "SET_DISCARD_QUEUE": {
+      const { queue } = action.payload;
       return {
         ...state,
-        toDiscard
+        queue
       }
     }
-    case "ADD_TO_DISCARD": {
+    case "ADD_TO_DISCARD_QUEUE": {
       const { index } = action.payload;
-      let toDiscard = state.toDiscard
-      toDiscard.push(index);
+      let queue = state.queue.concat([index]);
       return {
         ...state,
-        toDiscard
+        queue
       }
     }
-    case "REMOVE_TO_DISCARD": {
+    case "REMOVE_FROM_DISCARD_QUEUE": {
       const { index } = action.payload;
-      let toDiscard = state.toDiscard
-      toDiscard.splice(state.toDiscard.indexOf(index), 1);
+      let queue = state.queue.filter(item => item !== index);
       return {
         ...state,
-        toDiscard
+        queue
       }
     }
     default:
       return state;
   }
 }
+  

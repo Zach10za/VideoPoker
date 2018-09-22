@@ -1,4 +1,4 @@
 import { combineReducers } from "redux";
-import cards from "./cards";
+import discard from "./discard";
 
-export default combineReducers({ cards });
+export default combineReducers({ discard });

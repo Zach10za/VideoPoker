@@ -1,20 +1,20 @@
 
-export const setToDiscard = (toDiscard) => ({
-  type: "SET_TO_DISCARD",
+export const setDiscardQueue = (queue) => ({
+  type: "SET_DISCARD_QUEUE",
   payload: {
-    toDiscard
+    queue
   }
 });
 
-export const addToDiscard = (index) => ({
-  type: "ADD_TO_DISCARD",
+export const addToDiscardQueue = (index) => ({
+  type: "ADD_TO_DISCARD_QUEUE",
   payload: {
     index
   }
 });
 
-export const removeToDiscard = (index) => ({
-  type: "REMOVE_TO_DISCARD",
+export const removeFromDiscardQueue = (index) => ({
+  type: "REMOVE_FROM_DISCARD_QUEUE",
   payload: {
     index
   }

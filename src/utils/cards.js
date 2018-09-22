@@ -61,17 +61,17 @@ export function deal(deck, hand, numberOfCards) {
 /**
  * Discards x number of cards from the hand
  * 
- * @param {array} deck        A deck of cards
- * @param {array} hand        A subset of a deck of cards in the hand
- * @param {array} discard     A subset of a deck of cards that has been discarded
- * @param {array} toDiscard   The indexes of the cards to discard
+ * @param {array} deck          A deck of cards
+ * @param {array} hand          A subset of a deck of cards in the hand
+ * @param {array} discard       A subset of a deck of cards that has been discarded
+ * @param {array} discardQueue  The indexes of the cards to discard
  * 
  * @returns {object}          Returns the updated deck and updated hand
  */
-export function discard(deck, hand, discard, toDiscard) {
-  discard = discard.concat(toDiscard.filter((card, i) => toDiscard.includes(i)));
-  hand = hand.filter((card, i) => !toDiscard.includes(i)).concat(deck.slice(0,toDiscard.length));
-  deck = deck.slice(toDiscard.length)
+export function discard(deck, hand, discard, discardQueue) {
+  discard = discard.concat(discardQueue.filter((card, i) => discardQueue.includes(i)));
+  hand = hand.filter((card, i) => !discardQueue.includes(i)).concat(deck.slice(0,discardQueue.length));
+  deck = deck.slice(discardQueue.length)
   return {
     deck,
     hand,
@@ -90,25 +90,25 @@ export function scoreHand(hand) {
   let score = 0;
   let lastScore = "No points";
   if (pokerHands.fourOfAKind(hand)) {
-    lastScore = "4 of a Kind!";
+    lastScore = "4 of a Kind! +1000";
     score = 1000;
   } else if (pokerHands.fullHouse(hand)) {
-    lastScore = "Full House!";
+    lastScore = "Full House! +800";
     score = 800;
   } else if (pokerHands.flush(hand)) {
-    lastScore = "Flush!";
+    lastScore = "Flush! +700";
     score = 700;
   } else if (pokerHands.straight(hand)) {
-    lastScore = "Straight!";
+    lastScore = "Straight! +500";
     score = 500;
   } else if (pokerHands.threeOfAKind(hand)) {
-    lastScore = "3 of a Kind!";
+    lastScore = "3 of a Kind! +300";
     score = 300;
   } else  if (pokerHands.twoPair(hand)) {
-    lastScore = "Two Pair!";
+    lastScore = "Two Pair! +200";
     score = 200;
   } else  if (pokerHands.pair(hand)) {
-    lastScore = "Pair!";
+    lastScore = "Pair! +100";
     score = 100;
   }
   return {
