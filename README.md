@@ -2,6 +2,7 @@
   <br>
   <a href="http://videopoker.zachloza.com/"><img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/videopoker.png" alt="videopoker" width="500"/></a>
   <br>
+  <br>
 </h1>
 <p align="center">
   <a href="#/">
