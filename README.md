@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://videopoker.zachloza.com/"><img src="https://raw.githubusercontent.com/Zach10za/VideoPoker/master/src/assets/videopoker.png" alt="videopoker" width="200"></a>
+  <a href="http://videopoker.zachloza.com/"><img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/videopoker.png" alt="videopoker" width="200"/></a>
   <br>
 </h1>
 
