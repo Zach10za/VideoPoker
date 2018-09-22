@@ -1,11 +1,9 @@
 
-
-export const buildAndShuffleDeck = () => ({
-  type: "BUILD_AND_SHUFFLE_DECK"
-});
-
-export const discardAndScore = () => ({
-  type: "DISCARD_AND_SCORE"
+export const setToDiscard = (toDiscard) => ({
+  type: "SET_TO_DISCARD",
+  payload: {
+    toDiscard
+  }
 });
 
 export const addToDiscard = (index) => ({
@@ -20,8 +18,4 @@ export const removeToDiscard = (index) => ({
   payload: {
     index
   }
-});
-
-export const resetAndDeal = () => ({
-  type: "RESET_AND_DEAL"
 });

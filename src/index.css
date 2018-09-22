@@ -13,99 +13,104 @@ html {
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding: 50px;
-  background: #296f29; }
+  background: #296f29;
+  padding: 0 10px; }
 
 button.deal {
   position: absolute;
   top: 80%;
   right: 0;
   left: 0;
-  margin: 0 auto;
   width: 200px;
-  background: #1f7299;
-  color: #FFF;
-  border: none;
+  margin: 0 auto;
   padding: 10px;
-  border-radius: 50px;
-  transition: 0.2s;
   font-size: 1.2rem;
-  cursor: pointer;
+  color: #FFF;
+  background: #991f25;
+  border-top: 3px solid #bb2b32;
+  border-left: 3px solid #bb2b32;
+  border-right: 3px solid #7e1a1f;
+  border-bottom: 3px solid #7e1a1f;
+  border-radius: 50px;
   box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
-  border-top: 3px solid #2069ae;
-  border-left: 3px solid #2069ae;
-  border-right: 3px solid #0b447b;
-  border-bottom: 3px solid #0b447b; }
-  button.deal.go {
-    background: #1f5a99; }
+  transition: 0.2s;
+  cursor: pointer; }
   button.deal:hover {
-    background: #055daf;
+    background: #ba151e;
     box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1); }
+  button.deal.go {
+    background: #055daf;
+    border-top: 3px solid #2069ae;
+    border-left: 3px solid #2069ae;
+    border-right: 3px solid #0b447b;
+    border-bottom: 3px solid #0b447b; }
+    button.deal.go:hover {
+      background: #1f7299; }
 
 .last-score {
   position: absolute;
-  display: block;
   color: #FFF;
-  top: 8%;
-  width: 200px;
+  opacity: 0;
+  font-size: 1.5rem;
   text-align: center;
-  animation: 1s ease-out appearandslideup 1; }
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2; }
+  .last-score.animate {
+    animation: 2s ease-out appearandslideup 1; }
 
 .score {
   position: absolute;
   display: block;
   color: #FFF;
-  top: 20%;
+  top: 15%;
   width: 200px;
   text-align: center; }
   .score::before {
+    content: "Score";
     position: absolute;
     display: block;
-    content: "Score";
     top: -40px;
     left: 0;
     width: 200px;
-    text-align: center;
     text-decoration: underline; }
 
 .card {
-  height: 300px;
-  width: 214px;
-  border: 0 solid red;
-  margin: 0 5px;
-  position: relative;
-  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.4);
-  border-radius: 12px;
-  transition: 0.3s;
-  color: #000;
-  background: #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: contain;
-  background-repeat: none;
-  background-position: center center; }
+  margin: 0 5px;
+  max-width: 210px;
+  max-height: 40vh;
+  border-radius: 1vh;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  cursor: pointer; }
   .card:hover {
-    margin-bottom: 50px;
-    cursor: pointer;
     box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3); }
   .card.to-discard {
     margin-bottom: 100px;
-    opacity: 0.5;
+    opacity: 0.3;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5) inset; }
   .card.disabled {
-    opacity: 0.8; }
+    opacity: 0.7;
+    cursor: default; }
     .card.disabled:hover {
       margin-bottom: 0;
-      cursor: default;
       box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.4); }
+  .card img {
+    width: 100%;
+    height: auto; }
 
 @keyframes appearandslideup {
   0% {
     opacity: 0;
-    top: 10%;
-    font-size: 1.4rem; }
-  100% {
+    top: 30%;
+    font-size: 1rem; }
+  25% {
     opacity: 1;
-    top: 4%;
-    font-size: 0.8rem; } }
+    top: 25%;
+    font-size: 5rem; }
+  100% {
+    opacity: 0;
+    top: 10%;
+    font-size: 1rem; } }
