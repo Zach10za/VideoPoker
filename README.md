@@ -1,34 +1,62 @@
-# Video Poker
+<h1 align="center">
+  <br>
+  <a href="http://videopoker.zachloza.com/"><img src="https://raw.githubusercontent.com/Zach10za/VideoPoker/master/src/assets/videopoker.png" alt="videopoker" width="200"></a>
+  <br>
+</h1>
 
 Video poker 48 hour coding challenge
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+These instructions will help get a you a copy of the project running on your local machine.
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Installing
 
-### `npm test`
+This project has a number of dependencies. Naviagate to the project directory and run
 
-Launches the test runner in the interactive watch mode.<br>
+```
+npm install
+```
 
-### `npm run build`
+### Running Tests
 
-Builds the app for production to the `build` folder.<br>
+To run test navigate to the project directory and run
+
+```
+npm test
+```
+
+This launches an interactive test runner.
+
+### Using Sass
+
+This project uses sass. To compile the scss files, run the command
+
+```
+npm run build-css
+```
+
+To watch scss files and compile them on save, run the command
+
+```
+npm run watch-css
+```
+
+## Deployment
+
+To build this project, run the command
+
+```
+npm run build
+```
+
+This builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.
+## Built With
+* [React](https://reactjs.org/docs/getting-started.html) - Library used for user interface
+* [Redux](https://redux.js.org/) - State control
 
-### `npm run build-css`
-
-Compiles the scss files into css
-
-### `npm run watch-css`
-
-Compiles scss files into css and is triggered by changes to the scss files.
