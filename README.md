@@ -15,14 +15,7 @@
   </a>
 </p>
 
-Video poker coding test
-
 ## Getting Started
-
-These instructions will help get a you a copy of the project running on your local machine.
-
-### Prerequisites
-
 
 ### Installing
 
