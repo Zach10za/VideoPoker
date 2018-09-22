@@ -2,20 +2,71 @@
   <br>
   <a href="http://videopoker.zachloza.com/"><img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/videopoker.png" alt="videopoker" width="500"/></a>
   <br>
+  <br>
 </h1>
+<p align="center">
+  <a href="#/">
+    <img src="https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg">
+  </a>
+  <a href="#/">
+    <img src="https://img.shields.io/badge/contributions-welcome-orange.svg">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg">
+  </a>
+</p>
 
-![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/screenshot.png">
 
-Video poker coding test
+## How to play
+
+The goal of the game is simple: score as many points as possible. To score points you must create poker hands. To start, press `Deal` to draw 5 cards from a new deck. Once you have 5 cards, you may choose to discard 0 to 5 of them. To discard just select all the cards you do not want and then hit `Go`.
+
+<img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/screenshot2.png">
+
+You will then draw cards until you're back to 5. Based on a set few poker hands, you will recieved betwen 100 and 1000 points.
+
+<table>
+  <thead>
+    <tr>
+      <th>Hand</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4 of a Kind</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Full House</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>Flush</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <td>Straight</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>3 of a Kind</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Two Pair</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Pair</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Getting Started
-
-These instructions will help get a you a copy of the project running on your local machine.
-
-### Prerequisites
-
 
 ### Installing
 
