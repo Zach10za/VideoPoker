@@ -95,7 +95,7 @@ npm install
 
 ### Running Tests
 
-To run test navigate to the project directory and run
+Testing is all done with [Jest](https://jestjs.io/docs/en/getting-started). To run test navigate to the project directory and run the command
 
 ```
 npm test
@@ -111,7 +111,7 @@ This project uses sass. To compile the scss files, run the command
 npm run build-css
 ```
 
-To watch scss files and compile them on save, run the command
+To watch scss files and compile them on save, run
 
 ```
 npm run watch-css
@@ -125,8 +125,7 @@ To build this project, run the command
 npm run build
 ```
 
-This builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## Built With
 * [React](https://reactjs.org/docs/getting-started.html) - Library used for user interface
