@@ -42,7 +42,7 @@ class App extends Component {
     if (formattedScore.length > 3) {
       formattedScore.splice(formattedScore.length - 3, 0, ",");
     }
-    formattedScore.join("");
+    formattedScore = formattedScore.join("");
     return formattedScore;
   }
 
@@ -60,7 +60,6 @@ class App extends Component {
               key={`${card.value + card.suit.toUpperCase().slice(0,1)}`}
               index={i}
               {...card}
-              image={IMAGES[`${card.value + card.suit.toUpperCase().slice(0,1)}`]}
               reset={this.state.reset} />
           ))}
         </div>
@@ -69,14 +68,6 @@ class App extends Component {
     );
   }
 }
-
-// Dynamically import card images
-const importAll = (files) => {
-  const images = {};
-  files.keys().forEach(item => { images[item.replace('./', '').replace('.svg', '')] = files(item); });
-  return images;
-}
-const IMAGES = importAll(require.context('./assets/cards', false, /\.(svg)$/));
 
 const mapStateToProps = (state) => {
   return {
