@@ -3,6 +3,8 @@
   <a href="http://videopoker.zachloza.com/"><img src="https://github.com/Zach10za/VideoPoker/blob/master/src/assets/videopoker.png" alt="videopoker" width="500"/></a>
   <br>
   <br>
+    <p align="center">Try it out at <a href="https://videopoker.zachloza.com/">videopoker.zachloza.com</a><p/>
+  <br>
 </h1>
 <p align="center">
   <a href="#/">
@@ -76,6 +78,20 @@ This project has a number of dependencies. Naviagate to the project directory an
 ```
 npm install
 ```
+
+### File Structure
+
+    ├── public                    # Compiled files (alternatively `dist`)
+    ├── src                       # Source files
+    │   ├── assets                # Static resources such as images
+    │   │   └── cards             # SVG files for all 52 playing cards
+    │   ├── components            # React components
+    │   ├── redux                 # Redux related functions (store, actions, reducers)
+    │   │   └── reducers          # Redux reducers
+    │   ├── stylesheets           # Scss files
+    │   └── utils                 # Utility functions
+    ├── sw-prcahce-config.js      # Service worker cache configuration
+    └── README.md
 
 ### Running Tests
 
