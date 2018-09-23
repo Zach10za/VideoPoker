@@ -90,7 +90,7 @@ npm install
     │   │   └── reducers          # Redux reducers
     │   ├── stylesheets           # Scss files
     │   └── utils                 # Utility functions
-    ├── sw-prcahce-config.js      # Service worker cache configuration
+    ├── sw-precache-config.js      # Service worker cache configuration
     └── README.md
 
 ### Running Tests
