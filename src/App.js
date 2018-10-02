@@ -18,32 +18,19 @@ class App extends Component {
       lastScore: "",
       reset: true
     };
-    this.resetAndDeal = this.resetAndDeal.bind(this);
-    this.discardAndScore = this.discardAndScore.bind(this);
   }
 
-  resetAndDeal() {
+  resetAndDeal = () => {
     let { deck, hand } = cards.deal(cards.buildAndShufffleDeck(), [], 5)
     this.setState({ deck, hand, reset: false });
   }
 
-  discardAndScore() {
+  discardAndScore = () => {
     let { deck, hand, discard } = cards.discard(this.state.deck, this.state.hand, this.state.discard, this.props.discardQueue);
     let { score, lastScore } = cards.scoreHand(hand);
     this.props.setDiscardQueue([]); // Clear the discard queue
     hand.sort((a, b) => a.value - b.value);
     this.setState({ deck, hand, discard, score: score + this.state.score, lastScore, reset: true });
-  }
-
-  // Add comma for score > 999
-  formatScore = score => {
-    score = score.toString();
-    let formattedScore = score.split("");
-    if (formattedScore.length > 3) {
-      formattedScore.splice(formattedScore.length - 3, 0, ",");
-    }
-    formattedScore = formattedScore.join("");
-    return formattedScore;
   }
 
   render() {
@@ -54,7 +41,7 @@ class App extends Component {
       <div className="App">
         <div className="table">
           <div className={ this.state.reset ? "last-score animate" : "last-score" }>{ this.state.lastScore }</div>
-          <h1 className="score">{ this.formatScore(this.state.score) }</h1>
+          <h1 className="score">{ this.state.score.toLocaleString() }</h1>
           {this.state.hand.map((card, i) => (
             <Card
               key={`${card.value + card.suit.toUpperCase().slice(0,1)}`}

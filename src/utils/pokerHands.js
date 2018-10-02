@@ -34,7 +34,7 @@ export function straight(hand) {
  * @returns {boolean}
  */
 export function fullHouse(hand) {
-  const counts = [0,0,0,0,0,0,0,0,0,0,0,0,0];
+  const counts = new Array(13).fill(0);
   hand.forEach(card => {
     counts[card.value - 1]++;
   });
@@ -49,7 +49,7 @@ export function fullHouse(hand) {
  * @returns {boolean}
  */
 export function fourOfAKind(hand) {
-  const counts = [0,0,0,0,0,0,0,0,0,0,0,0,0];
+  const counts = new Array(13).fill(0);
   hand.forEach(card => {
     counts[card.value - 1]++;
   });
@@ -64,7 +64,7 @@ export function fourOfAKind(hand) {
  * @returns {boolean}
  */
 export function threeOfAKind(hand) {
-  const counts = [0,0,0,0,0,0,0,0,0,0,0,0,0];
+  const counts = new Array(13).fill(0);
   hand.forEach(card => {
     counts[card.value - 1]++;
   });
@@ -79,11 +79,11 @@ export function threeOfAKind(hand) {
  * @returns {boolean}
  */
 export function twoPair(hand) {
-  const counts = [0,0,0,0,0,0,0,0,0,0,0,0,0];
+  const counts = new Array(13).fill(0);
   hand.forEach(card => {
     counts[card.value - 1]++;
   });
-  const valueCounts = [0,0,0,0];
+  const valueCounts = new Array(4).fill(0);
   counts.forEach(count => {
     valueCounts[count - 1]++;
   });
@@ -98,7 +98,7 @@ export function twoPair(hand) {
  * @returns {boolean}
  */
 export function pair(hand) {
-  const counts = [0,0,0,0,0,0,0,0,0,0,0,0,0];
+  const counts = new Array(13).fill(0);
   hand.forEach(card => {
     counts[card.value - 1]++;
   });

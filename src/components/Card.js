@@ -5,12 +5,7 @@ import { addToDiscardQueue, removeFromDiscardQueue } from '../redux/actions';
 
 class Card extends Component {
 
-  componentWillMount() {
-    const img = document.createElement('img');
-    img.src = `/images/cards/${this.props.value + this.props.suit.toUpperCase().slice(0,1)}.svg`;
-  }
-
-  selectCard() {
+  selectCard = () => {
     if (this.props.reset) return; // Do not allow select if game need to be reset
     if (this.props.discardQueue.includes(this.props.index)) {
       this.props.removeFromDiscardQueue(this.props.index);
@@ -19,7 +14,7 @@ class Card extends Component {
     }
   }
 
-  render() {
+  render = () => {
     let classname = "card";
     if (this.props.reset) {
       classname += " disabled";
